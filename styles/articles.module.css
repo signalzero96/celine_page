@@ -1,0 +1,61 @@
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.slider_inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1060px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 5;
+}
+.slider_content {
+  margin: 100px;
+}
+.slider_pagination {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 30px;
+  z-index: 6;
+}
+.slider_pagination button {
+  display: block;
+  appearance: none;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background: rgb(70, 64, 64);
+  border-radius: 80%;
+  margin: 35px;
+  opacity: 0.4;
+  transition: opacity 0.2s ease-in-out;
+}
+.active {
+  opacity: 1 !important;
+}
+.active:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: block;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 100%;
+  transform: translate(-42%, -32%);
+  box-sizing: border-box;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}

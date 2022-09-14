@@ -1,0 +1,20 @@
+.nav {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  width: 60vw;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: lightgrey;
+}
