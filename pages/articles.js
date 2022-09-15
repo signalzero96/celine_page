@@ -15,10 +15,13 @@ export default function Articles() {
       <div className={styles.slider}>
         <div className={styles.slider_inner}>
           <div className={styles.slider_content}>
-            {page === '1' && <h1>page1!</h1>}
-            {page === '2' && <h1>page2!</h1>}
-            {page === '3' && <h1>page3!</h1>}
-            {page === '4' && <h1>page4!</h1>}
+            {page === '1' && (
+              <h1>나는 슬픔을 포착하는 사람이 되기로 했거든. - 눈</h1>
+            )}
+            {page === '2' && (
+              <h1>쪽지를 읽는 시간은 슬픔을 느끼지 못하게 돼. - 마취</h1>
+            )}
+            {page === '3' && <h1>어느날 내안의 구덩이가 생겼다. - 바캉스</h1>}
           </div>
           <div className={styles.slider_pagination}>
             <button
@@ -35,11 +38,6 @@ export default function Articles() {
               className={page === '3' ? styles.active : ''}
               onClick={onPageChanged}
               id='3'
-            ></button>
-            <button
-              className={page === '4' ? styles.active : ''}
-              onClick={onPageChanged}
-              id='4'
             ></button>
           </div>
         </div>

@@ -14,7 +14,17 @@
   justify-content: center;
   align-items: center;
 }
-
+.inner_home {
+  width: 60vw;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
 .active {
   color: lightgrey;
+}
+.inner_home .active {
+  color: white;
 }

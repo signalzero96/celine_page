@@ -6,7 +6,9 @@ export default function NavBar() {
   const router = useRouter();
   return (
     <nav className={styles.nav}>
-      <div className={styles.inner}>
+      <div
+        className={router.pathname === '/' ? styles.inner_home : styles.inner}
+      >
         <Link href='/'>
           <a className={router.pathname === '/' ? styles.active : ''}>HOME</a>
         </Link>
